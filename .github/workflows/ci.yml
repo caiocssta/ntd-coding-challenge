@@ -17,10 +17,13 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 3.0.3
-        bundler-cache: true
+        bundler-cache: false
 
     - name: Install dependencies
       run: bundle install
+
+    - name: Check RSpec installation
+      run: bundle exec gem list rspec
 
     - name: Set up Docker repository
       run: |
@@ -45,4 +48,4 @@ jobs:
         BUNDLE_GEMFILE: ./Gemfile
       run: |
         docker --version
-        rake test_and_report
+        bundle exec rake test_and_report
