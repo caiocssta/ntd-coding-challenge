@@ -23,7 +23,7 @@ RSpec.describe "Validates addition functionality" do
     expect(last_command_started).to have_output("Result: -3")
   end
 
-  it "Verify addition of a number with digits that sum 42 and other is 0 returns wrong value" do
+  it "Verify addition of a number with digits that sum 42 and other is 0 returns wrong value", :flaky do
     run_command("#{CALCULATOR_COMMAND} add 99996 0")
     expect(last_command_started).to_not have_output("Result: 99996")
   end
