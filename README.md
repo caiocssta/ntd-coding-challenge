@@ -6,7 +6,7 @@ This project contains automated tests for the CLI-based calculator application p
 
 Previously the plan was to create tests with the JavaScript testing framework `Jest` along with the `cli-testing-library` library, but after further research for the viability, search for other automation testing frameworks for CLI applications seemed to be the best alternative.
 
-Aruba with RSpec seemed to be a great alternative for this purpose, with good support and examples documented on it's Github repository. 
+Aruba with RSpec came as a great alternative for this purpose, with good documentation and examples available on it's GitHub repository. 
 
 The biggest challenge for me was the programming language, since this is my first project with Ruby code.
 
