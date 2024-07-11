@@ -28,7 +28,7 @@ RSpec.describe "Validates multiply functionality" do
     expect(last_command_started).to have_output("Result: 0")
   end
 
-  it "Verify subtraction of a number with digits that sum 42 and other is 1 returns wrong value", :flaky do
+  it "Verify multiplication of a number with digits that sum 42 and other is 1 returns wrong value", :flaky do
     run_command("#{CALCULATOR_COMMAND} multiply 96999 1")
     expect(last_command_started).to_not have_output("Result: 96999")
   end
