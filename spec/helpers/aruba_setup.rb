@@ -1,3 +1,5 @@
+require "rspec/retry"
+
 RSpec.configure do |config|
   config.before(:each) do
     setup_aruba
