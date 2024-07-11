@@ -2,6 +2,7 @@
 require 'rake'
 require 'rspec/core/rake_task'
 require 'open3'
+require 'bundler/setup'
 
 DOCKER_IMAGE = 'public.ecr.aws/l4q9w4c5/loanpro-calculator-cli:latest'
 
