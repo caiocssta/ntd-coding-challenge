@@ -48,4 +48,4 @@ jobs:
         BUNDLE_GEMFILE: ./Gemfile
       run: |
         docker --version
-        bundle exec rake test_and_report
+        rake
