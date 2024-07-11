@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project contains automated tests for the CLI-based calculator application provided. The tests are written in Ruby using the RSpec testing framework and the Aruba library to simulate command-line interactions. Additionally, Rake is used to automate the execution of tests, including checking for the presence of the required Docker image.
+This project contains automated tests for the CLI-based calculator application provided. The tests are written in Ruby using the RSpec testing framework and the Aruba library to simulate command-line interactions. Additionally, Rake is used to automate tasks execution, including a check for the application Docker image.
 
 Previously the plan was to create tests with the JavaScript testing framework `Jest` along with the `cli-testing-library` library, but after further research for the viability, search for other automation testing frameworks for CLI applications seemed to be the best alternative.
 
@@ -53,3 +53,9 @@ This will:
 - Check if the Docker image for the CLI calculator exists locally.
 - Pull the Docker image if it does not exist.
 - Execute the RSpec tests and generate a JUnit XML report.
+
+## GitHub Actions CI
+GitHub Actions is used to automate the testing process on each push and pull request to the main branch.
+
+The CI workflow is defined in the `.github/workflows/ci.yml` file.
+
