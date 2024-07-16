@@ -61,7 +61,9 @@ This will:
 - Execute the RSpec tests and generate a JUnit XML report.
 
 ## GitHub Actions CI
-GitHub Actions is used to automate the testing process on each push and pull request to the main branch.
+GitHub Actions is used to automate the testing process on each push request to the main branch.
 
 The CI workflow is defined in the `.github/workflows/ci.yml` file.
 
+Results and executions can be found in the repository ["Actions"](https://github.com/caiocssta/ntd-coding-challenge/actions) section.
+ 
