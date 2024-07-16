@@ -1,5 +1,11 @@
 # NTD Code Challenge
 
+## Documentation
+[Test Plan](documentation/test-plan.pdf) \
+[Test Cases](documentation/test-cases.md) \
+[Bug Report](documentation/bug-report.md)
+
+
 ## Introduction
 
 This project contains automated tests for the CLI-based calculator application provided. The tests are written in Ruby using the RSpec testing framework and the Aruba library to simulate command-line interactions. Additionally, Rake is used to automate tasks execution, including a check for the application Docker image.
